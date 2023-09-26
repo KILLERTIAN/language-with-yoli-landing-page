@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.whyus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.question-whyus-video {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question-whyus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.question-whyus>h2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.question-whyus span {
+    background: linear-gradient(to right, #ff3381, #ffa568, #ff62ff, #af46c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.question-whyus>p {
+    margin: 10px 40px;
+    letter-spacing: 0.6px;
+    color: #111;
+    font-size: 22px;
+}
+
+.intro-video video {
+    height: 360px;
+    width: 640px;
+    aspect-ratio: 16/9;
+    margin: 20px;
+}
+
+.breaker-line {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #ff3381, #ffa568, #ff62ff, #af46c4);
+}
+
+.cource_all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.our-courses {
+    font-size: 75px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.our-courses span {
+    background: linear-gradient(to right, #ff3381, #ffa568, #ff62ff, #af46c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.course_all-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 350px;
+    background: linear-gradient(to right, #ff338135, #ffa46835, #ff62ff35, #af46c435);
+    margin: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* border: 3px solid #000000; */
+    transition: 0.25s;
+}
+
+
+.course_all-card:hover {
+    transform: scale(1.01);
+}
+
+.course_all-card h2 {
+    font-size: 4em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.course_all-card button {
+    position: absolute;
+    bottom: 30px;
+    padding: 10px 20px;
+    margin: 30px;
+    margin-top: 50px;
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.65s;
+    border-radius: 7px;
+    border: 2.5px solid #ffe6e0;
+    background: linear-gradient(to right, #ffa088, #fdb483, #ddaaff, hsl(290, 100%, 75%));
+    cursor: pointer;
+
+}
+
+.course_all-card button:hover {
+    transform: scale(1.05);
+}
+
+.course_all-card img {
+    position: absolute;
+    object-fit: cover;
+    z-index: -9;
+    height: 450px;
+    width: 350px;
+    transition: 0.25s;
+    border-radius: 20px;
+}
+
+.course-downvideo {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 0;
+}
+
+.value-heading {
+    font-size: 75px;
+    font-weight: 600;
+    margin: 40px;
+}
+
+.value-heading span {
+    background: linear-gradient(to right, #ff3381, #ffa568, #ff62ff, #af46c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.value-points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.points {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.img-point {
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 6px 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-point ion-icon {
+    color: #ffffff;
+    font-size: 28px;
+    background: rgb(64, 224, 0);
+    border-radius: 50%;
+    margin: 5px;
+}
