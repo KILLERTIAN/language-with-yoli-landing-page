@@ -19,8 +19,7 @@ function WhyUs() {
                     } loop />
                 </div>
             </div>
-            <div className="breaker-line">
-            </div>
+
             <h1 className='value-heading'>Online <span>1 to 1 Spanish</span> Lessons</h1>
             <div className="value-points">
 
