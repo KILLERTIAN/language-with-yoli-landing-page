@@ -15,7 +15,7 @@ function HeroSection() {
             <div className="hero-text">
                 <h1><span>Unlock Your Potential</span>
                     <br /> Learn Spanish the Right Way with <span1>Yoli</span1></h1>
-                <p>Learning Spanish not only opens doors to communication <br /> but also broadens your horizons, enhances your career <br />prospects, and enriches your understanding of the <br />world's cultures. It is a valuable skill that can bring <br />numerous personal and professional benefits. <br /> <span>Try a one hour 1 to 1 class for free now </span></p>
+                <p><span>Try a one hour 1 to 1 class for free now </span></p>
             </div>
 
             <a href="#" className='hero-free-trial-button'><button>Free Trial</button></a>
