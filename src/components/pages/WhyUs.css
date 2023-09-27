@@ -24,19 +24,17 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px;
+    margin: 40px 20px;
 }
 
 .question-whyus>h2 {
-    font-size: 75px;
+    font-size: 4em;
     font-weight: 600;
     margin-left: 30px;
 }
 
 .question-whyus span {
-    background: linear-gradient(to right, #ff3381, #ffa568, #ff62ff, #af46c4);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: #20f17e;
 }
 
 .question-whyus>p {
@@ -69,16 +67,13 @@
 }
 
 .our-courses {
-    font-size: 75px;
+    font-size: 4em;
     font-weight: 600;
     margin: 20px;
 }
 
 .our-courses span {
-    background: linear-gradient(to right, #ff3381, #ffa568, #ff62ff, #af46c4);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
+    color: #24da7f;
 }
 
 .course_all-card {
@@ -89,7 +84,7 @@
     justify-content: center;
     height: 450px;
     width: 350px;
-    background: linear-gradient(to right, #ff338135, #ffa46835, #ff62ff35, #af46c435);
+    background: linear-gradient(to right, #fdeff42d, #fcefe71a, #ffdaff35, #f5c1ff35);
     margin: 30px;
     border-radius: 20px;
     cursor: pointer;
@@ -148,7 +143,7 @@
 .value-heading {
     font-size: 75px;
     font-weight: 600;
-    margin: 40px;
+    margin: 40px 20px;
 }
 
 .value-heading span {
@@ -184,7 +179,41 @@
 .img-point ion-icon {
     color: #ffffff;
     font-size: 28px;
-    background: rgb(64, 224, 0);
+    background: rgb(187, 187, 187);
     border-radius: 50%;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+.our-tutors {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(221, 221, 221);
+}
+
+.our-tutors ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.our-tutors ul li {
+    display: flex;
+    list-style: none;
+    margin: 0 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #2c2c2c;
+    font-weight: 500;
+}
+
+.our-tutors ul li span {
+    font-size: 2em;
+    font-weight: 500;
     margin: 5px;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './WhyUs.css';
-import VideoBCS from '../videos/Homepageintro.mp4';
+// import VideoBCS from '../videos/Homepageintro.mp4';
 
 
 function WhyUs() {
@@ -14,13 +14,11 @@ function WhyUs() {
                         <br />
                         We teach students of different ages, degrees, and cultural backgrounds with the goal of learning this language to use in everyday life. </p>
                 </div>
-                <div className="intro-video">
+                {/* <div className="intro-video">
                     <video controls src={VideoBCS
                     } loop />
-                </div>
+                </div> */}
             </div>
-
-            <h1 className='value-heading'>Online <span>1 to 1 Spanish</span> Lessons</h1>
             <div className="value-points">
 
                 <div className="points">
@@ -36,9 +34,7 @@ function WhyUs() {
                     <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Continuous Improvement</div>
                 </div>
             </div>
-            <div className="breaker-line">
-            </div>
-            <h1 className='our-courses'>Our <span>Courses</span></h1>
+            {/* <h1 className='our-courses'>Our <span>Courses</span></h1>
             <div className="cource_all">
 
                 <div className="course_all-card">
@@ -56,6 +52,13 @@ function WhyUs() {
                     <img src="images/adult-card.jpg" alt="" />
                     <button className="course_all-button">Enroll Now</button>
                 </div>
+            </div> */}
+            <div className="our-tutors">
+                <ul>
+                    <li><span>12+</span> Years of Teaching Experience</li>
+                    <li><span>400+</span> Students Over Years</li>
+                    <li><span>6+</span>Teaching Awards</li>
+                </ul>
             </div>
         </div>
 
