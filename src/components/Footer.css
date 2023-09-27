@@ -1,10 +1,10 @@
 .footer-container {
-    /* background-color: #ffffff; */
-    background: linear-gradient(to right, #ffd2c7, #ffe7d6, #e9cffa, hsl(290, 100%, 86%));
+    background-color: #ffffff;
+    /* background: linear-gradient(to left, #fffce7, #f0fff5); */
     padding: 2rem 0 2rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -12,10 +12,14 @@
 .footer-organiser {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenl;
+    width: 100%;
 }
 
 .footer-subscription {
     display: flex;
+    position: relative;
+    left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -30,7 +34,7 @@
     height: 10vh;
     width: 15vw;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .footer-subscription>p {
@@ -46,9 +50,10 @@
 }
 
 .footer-subscription-heading span {
-    background: linear-gradient(to right, #fd136d, #ff893a, #ff3cff, #b41cd3);
+    /* background: linear-gradient(to right, #fd136d, #ff893a, #ff3cff, #b41cd3);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
+    color: rgb(28, 219, 70);
 }
 
 .input-areas {
@@ -82,11 +87,13 @@
     font-size: 1.12em;
     font-weight: 500;
     color: #000000;
-    background: #ffffff;
+    background: rgb(255, 191, 73);
     cursor: pointer;
 }
 
 .footer-links {
+    display: flex;
+    position: relative;
     width: 100%;
     max-width: 1000px;
     height: auto;
@@ -105,12 +112,12 @@
     align-items: flex-start;
     margin: 5px;
     text-align: left;
-    width: 160px;
+    width: 170px;
     box-sizing: border-box;
 }
 
 .footer-link-items h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #000000;
 }
 
@@ -145,16 +152,15 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    max-width: 1000px;
     width: 100%;
 }
 
 .social-media-wrap {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    position: absolute;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
     right: 50px;
     bottom: 30px;
     max-width: 1000px;

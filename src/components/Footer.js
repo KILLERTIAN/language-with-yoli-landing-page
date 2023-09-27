@@ -13,7 +13,7 @@ function Footer() {
                             <img src="images/Language-with-yoli-logo.png" />
                         </Link>
                     </div>
-                    <p className='footer-subscription-heading'>
+                    {/* <p className='footer-subscription-heading'>
                         Join the
                         <span>  Newsletter</span>
                     </p>
@@ -27,7 +27,7 @@ function Footer() {
                             />
                             <button className='footer-submit-button'>Submit</button>
                         </form>
-                    </div>
+                    </div> */}
                 </section>
                 <div class='footer-links'>
                     <div className='footer-link-wrapper'>
