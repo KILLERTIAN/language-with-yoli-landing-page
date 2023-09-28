@@ -6,10 +6,16 @@ import './WhyUs.css';
 function WhyUs() {
     return (
         <div className='whyus-container'>
-
+            <div className="our-tutors">
+                <ul>
+                    <li><span>20+</span> Years of Teaching Experience</li>
+                    <li><span>400+</span> Students Taught Over Years</li>
+                    <li><span>6+</span>Teaching Awards</li>
+                </ul>
+            </div>
             <div className="question-whyus-video">
                 <div className="question-whyus">
-                    <h2>Why <span>Us?</span></h2>
+                    {/* <h2>Why <span>Us?</span></h2> */}
                     <p>Language with Yoli offers lessons that help students learn Spanish in a fun & easy way. Our teachers are native speakers and certified educators.
                         <br />
                         We teach students of different ages, degrees, and cultural backgrounds with the goal of learning this language to use in everyday life. </p>
@@ -19,6 +25,7 @@ function WhyUs() {
                     } loop />
                 </div> */}
             </div>
+
             <div className="value-points">
 
                 <div className="points">
@@ -53,13 +60,7 @@ function WhyUs() {
                     <button className="course_all-button">Enroll Now</button>
                 </div>
             </div> */}
-            <div className="our-tutors">
-                <ul>
-                    <li><span>12+</span> Years of Teaching Experience</li>
-                    <li><span>400+</span> Students Over Years</li>
-                    <li><span>6+</span>Teaching Awards</li>
-                </ul>
-            </div>
+
         </div>
 
     )
