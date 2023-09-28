@@ -9,7 +9,7 @@
     top: 0;
     z-index: 999;
     width: 100%;
-    box-shadow: inset #242222 #242424;
+    box-shadow: 0, 0, #222, 0;
 }
 
 .navbar-container {
