@@ -48,7 +48,7 @@ function Footer() {
                         </div>
 
                     </div>
-                    <div className='footer-link-wrapper'>
+                    <div className='footer-link-wrapper-2'>
 
                         <div class='footer-link-items'>
                             <h2>Social Media</h2>
@@ -74,7 +74,7 @@ function Footer() {
                     <div class='social-icons'>
                         <Link
                             className='social-icon-link-facebook'
-                            to='/'
+                            to='https://www.facebook.com/languagewithyoli/'
                             target='_blank'
                             aria-label='Facebook'
                         >
