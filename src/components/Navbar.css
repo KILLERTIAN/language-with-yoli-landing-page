@@ -1,5 +1,5 @@
 .navbar {
-    background: #fff;
+    background: linear-gradient(to left, #0f0f0f9a, transparent);
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
     display: flex;
     position: absolute;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
     flex-direction: row;
     /* padding: 10px; */
 }
@@ -45,7 +45,7 @@
 .nav-free-trial-button button {
     height: 10vh;
     width: 200px;
-    background: rgb(255, 191, 73);
+    background: rgb(255, 234, 143);
     border: none;
     color: #111;
     font-size: 1.1em;
@@ -54,9 +54,29 @@
     cursor: pointer;
     transition: 0.5s;
     letter-spacing: 0.05em;
+
 }
 
-.nav-free-trial-button button:hover {
+/* .nav-free-trial-button button:hover {
     background: #111;
     color: #fff;
+} */
+@media(max-width:980px) {
+    .navbar {
+        height: 15vh;
+    }
+
+    .navbar-container {
+        justify-content: center;
+    }
+
+    .navbar .Navbar-logo img {
+        height: 10vh;
+        width: 55vw;
+        cursor: pointer;
+        margin: 10px;
+        margin-top: 5vh;
+        /* margin-left: 10px; */
+
+    }
 }

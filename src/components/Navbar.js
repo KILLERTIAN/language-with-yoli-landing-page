@@ -38,7 +38,7 @@ function Navbar() {
                         <i className={click ? '<ion-icon name="close"></ion-icon>' : '<ion-icon name="menu"></ion-icon>'} />
                     </div> */}
 
-                    <a href="#" className='nav-free-trial-button'><button>Free Trial</button></a>
+                    {/* <a href="#" className='nav-free-trial-button'><button>Free Trial</button></a> */}
                 </div>
             </nav >
         </>
