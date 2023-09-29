@@ -41,6 +41,17 @@ function WhyUs() {
                     <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Continuous Improvement</div>
                 </div>
             </div>
+            <div className="why-us-cards">
+                <div className="why-us-card">
+                    <img src="images/teacher.png" alt="" />
+                    <h2>Skilled Teachers</h2><p>Our tutors are native speakers, fully-certified and have many years of experience in teaching.</p></div>
+                <div className="why-us-card">
+                    <img src="images/exam.png" alt="" />
+                    <h2>Improved Test Scores</h2><p>Language with Yoli guarantees better test scores or extra lessons will be provided!</p></div>
+                <div className="why-us-card">
+                    <img src="images/efficiency.png" alt="" />
+                    <h2>Efficient and Flexible</h2><p>Online learning benefits students as it gives them the ability to learn remotely without the hassle of commuting.</p></div>
+            </div>
             {/* <h1 className='our-courses'>Our <span>Courses</span></h1>
             <div className="cource_all">
 

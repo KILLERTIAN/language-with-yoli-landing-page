@@ -8,48 +8,60 @@
     height: 90vh;
     width: 100%;
     display: flex;
-    position: relative;
+    /* position: absolute; */
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    /* justify-content: center; */
+    align-items: center;
     object-fit: contain;
-    background: linear-gradient(90deg, #222, transparent);
+    background: linear-gradient(to left, #0f0f0f9a, transparent);
 }
 
 .hero-container img {
     position: absolute;
+    top: 0;
     object-fit: cover;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     z-index: -9;
 }
 
 .hero-text {
     display: flex;
-    align-items: flex-start;
+    position: relative;
+    /* top: 20vh; */
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 50%;
+    text-align: center;
+    width: 100%;
+    margin: 100px 0 20px 0;
 }
 
 .hero-text>h1 {
-    color: #fff;
+    color: #f0fc88;
     font-size: 3.1em;
-    margin-left: 40px;
+    text-align: center;
+    /* margin-left: 40px; */
 }
 
 .hero-text>p {
-    margin: 10px 40px;
-    letter-spacing: 0.6px;
-    color: #fff;
-    font-size: 1.15em;
+    margin: 10px;
+    letter-spacing: 0.8px;
+    color: #141414;
+    font-size: 1.45em;
+    font-weight: 600;
 }
 
 .hero-text span {
-    color: #23fb8f;
+    color: #2cffff;
 }
 
 .hero-text span1 {
-    color: #fbc123;
+    color: #fca6ff;
+}
+
+.hero-text span2 {
+    color: #92ffed;
 }
 
 .hero-free-trial-button {
@@ -58,14 +70,14 @@
     display: flex;
     position: relative;
     text-decoration: none;
-    margin: 10px 40px;
+    margin: 40px;
 
 }
 
 .hero-free-trial-button button {
     height: 10vh;
     width: 200px;
-    background: rgb(255, 191, 73);
+    background: rgb(255, 200, 99);
     border: none;
     color: #111;
     font-size: 1.1em;
@@ -74,5 +86,37 @@
     cursor: pointer;
     transition: 0.5s;
     letter-spacing: 0.05em;
+    border-radius: 50px;
+    box-shadow: 2px 3px 10px #ffad14,
+        -1px -2px 5px #ff87ff;
+    transition: 0.5s;
+}
 
+.hero-free-trial-button button:hover {
+    box-shadow: 2px 3px 30px #ffad14,
+        -1px -2px 20px #ff87ff;
+}
+
+@media(max-width:680px) {
+    .hero-container {
+        justify-content: center;
+        height: 85vh;
+    }
+
+    .hero-text {
+        margin: 10px 0 20px 0;
+    }
+
+    .hero-text>h1 {
+        font-size: 2.5em;
+        margin: 3vh 2vh;
+    }
+
+    .hero-free-trial-button {
+        margin: 25px 10px;
+    }
+
+    .hero-text>p {
+        margin: 5px;
+    }
 }

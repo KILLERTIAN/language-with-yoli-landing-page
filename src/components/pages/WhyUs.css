@@ -5,6 +5,7 @@
 
 .whyus-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -44,12 +45,7 @@
     font-size: 22px;
 }
 
-.intro-video video {
-    height: 360px;
-    width: 640px;
-    aspect-ratio: 16/9;
-    margin: 20px;
-}
+
 
 .breaker-line {
     align-items: center;
@@ -217,4 +213,99 @@
     font-size: 2em;
     font-weight: 500;
     margin: 5px;
+}
+
+.why-us-cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+    position: relative;
+
+}
+
+.why-us-card {
+    display: flex;
+    width: 350px;
+    padding: 1.5em;
+    /* background: green; */
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #f8edff, #fffaee);
+    box-shadow: 10px 10px 40px #ffddfd,
+        -10px -10px 40px #fce3e3;
+    /* box-shadow: #ffc8fb 0px 13px 27px -5px, #ffe9e9 0px 8px 16px -8px; */
+}
+
+.why-us-card>img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: auto;
+}
+
+.why-us-card>h2 {
+    font-size: 26px;
+    margin: 10px;
+}
+
+.why-us-card>p {
+    font-size: 19px;
+}
+
+@media(max-width:680px) {
+    .our-tutors {
+        height: 25vh;
+    }
+
+    .our-tutors ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .our-tutors ul li span {
+        margin: 5px 10px;
+    }
+
+    .value-points {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .points {
+        margin: 0;
+    }
+
+    .img-point {
+        margin: 10px;
+    }
+
+    .why-us-cards {
+        flex-direction: column;
+
+    }
+
+    .why-us-card {
+        width: 300px;
+        margin: 20px 10px;
+    }
+
+    .img-point ion-icon {
+        margin: 10px;
+        min-width: 28px;
+    }
+
+    .question-whyus>h2 {
+        font-size: 3.6em;
+        font-weight: 600;
+        margin-left: 30px;
+    }
 }
