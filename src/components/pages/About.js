@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './About.css';
-import VideoBCS from '../videos/Homepageintro.mp4';
+// import VideoBCS from '../videos/Homepageintro.mp4';
 
 function About() {
     return (
@@ -9,10 +9,10 @@ function About() {
         <>
             <div className="about-us-container">
                 <div className="video-form">
-                    <div className="intro-video">
+                    {/* <div className="intro-video">
                         <video controls src={VideoBCS
                         } loop />
-                    </div>
+                    </div> */}
                     <div className="input-form">
                         <label htmlFor="">Enter your Name</label>
                         <input type="text" placeholder='Enter your Name' />

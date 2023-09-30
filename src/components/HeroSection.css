@@ -13,35 +13,36 @@
     /* justify-content: center; */
     align-items: center;
     object-fit: contain;
-    background: linear-gradient(to left, #0f0f0f9a, transparent);
+    /* background: linear-gradient(to right, #4ca9ff62, transparent); */
 }
 
 .hero-container img {
     position: absolute;
-    top: 0;
+    top: 0vh;
     object-fit: cover;
-    height: 100vh;
+    height: 1-0vh;
     width: 100%;
     z-index: -9;
+    /* opacity: 0.5; */
 }
 
 .hero-text {
     display: flex;
     position: relative;
     /* top: 20vh; */
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     margin: 100px 0 20px 0;
 }
 
 .hero-text>h1 {
-    color: #f0fc88;
+    color: #101011;
     font-size: 3.1em;
-    text-align: center;
-    /* margin-left: 40px; */
+    /* text-align: center; */
+    margin-left: 40px;
 }
 
 .hero-text>p {

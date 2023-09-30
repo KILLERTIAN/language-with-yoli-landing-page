@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(to left, #0f0f0f9a, transparent);
+    /* background: linear-gradient(to left, #0f0f0f9a, transparent); */
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@
     z-index: 999;
     width: 100%;
     box-shadow: 0, 0, #222, 0;
+    /* background: #fff; */
 }
 
 .navbar-container {

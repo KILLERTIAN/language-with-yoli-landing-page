@@ -13,9 +13,39 @@ function WhyUs() {
                     <li><span>6+</span>Teaching Awards</li>
                 </ul>
             </div>
+            <div className="course-cards">
+                <div className="course-card">
+                    {/* <img src="images/teacher.png" alt="" /> */}
+                    <h2>KIDS</h2>
+                    <ul>
+                        <li>Flexible Schedule</li>
+                        <li>Personalized Lesson Plans</li>
+                        <li>Fun & Easy Way to Learn</li>
+                    </ul>
+                    <button>Learn more</button></div>
+
+                <div className="course-card">
+                    {/* <img src="images/exam.png" alt="" /> */}
+                    <h2>Teens</h2><ul>
+                        <li>100% Guaranteed Improved Test Scores</li>
+                        <li>SAT/FLACS Test Prep</li>
+                        <li>Conversational Spanish Skills</li>
+                    </ul>
+                    <button>Learn more</button></div>
+
+                <div className="course-card">
+                    {/* <img src="images/efficiency.png" alt="" /> */}
+                    <h2>Adults</h2>
+                    <ul>
+                        <li>Learn At Your Own Pace</li>
+                        <li>Tailored to your Needs & Schedule</li>
+                        <li>Spanish for Travel or Live Abroad</li>
+                    </ul>
+                    <button>Learn more</button></div>
+            </div>
             <div className="question-whyus-video">
                 <div className="question-whyus">
-                    {/* <h2>Why <span>Us?</span></h2> */}
+                    <h2>Why <span>Us?</span></h2>
                     <p>Language with Yoli offers lessons that help students learn Spanish in a fun & easy way. Our teachers are native speakers and certified educators.
                         <br />
                         We teach students of different ages, degrees, and cultural backgrounds with the goal of learning this language to use in everyday life. </p>

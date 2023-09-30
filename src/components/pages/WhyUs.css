@@ -35,7 +35,7 @@
 }
 
 .question-whyus span {
-    color: #20f17e;
+    color: #10dd6c;
 }
 
 .question-whyus>p {
@@ -175,8 +175,8 @@
 
 .img-point ion-icon {
     color: #ffffff;
-    font-size: 28px;
-    background: rgb(187, 187, 187);
+    font-size: 30px;
+    background: rgb(37, 231, 79);
     border-radius: 50%;
     margin: 5px;
     margin-right: 20px;
@@ -188,7 +188,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: rgb(221, 221, 221);
+    background: linear-gradient(to right, rgb(255, 210, 210), rgb(255, 255, 204), rgb(216, 240, 255), rgb(255, 209, 255));
 }
 
 .our-tutors ul {
@@ -207,12 +207,17 @@
     justify-content: center;
     color: #2c2c2c;
     font-weight: 500;
+    font-size: 1.2em;
 }
 
 .our-tutors ul li span {
     font-size: 2em;
-    font-weight: 500;
+    font-weight: 700;
     margin: 5px;
+    background: linear-gradient(to right, #ff498f, #ffa568, #ff62ff, #af46c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
 }
 
 .why-us-cards {
@@ -259,6 +264,67 @@
 
 .why-us-card>p {
     font-size: 19px;
+}
+
+.course-cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+    position: relative;
+
+}
+
+.course-card {
+    display: flex;
+    width: 350px;
+    padding: 1.5em;
+    /* background: green; */
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #faf0ff, #fffbf3);
+    box-shadow: 10px 10px 50px #ffdafd,
+        -8px -8px 40px #ffdcdc;
+    /* box-shadow: #ffc8fb 0px 13px 27px -5px, #ffe9e9 0px 8px 16px -8px; */
+}
+
+.course-card h2 {
+    background: linear-gradient(to right, #ff498f, #ffa568, #ff62ff, #af46c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2.5em;
+    margin: 20px auto;
+    /* text-align: start; */
+}
+
+.course-card ul {
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.course-card ul li {
+    align-items: flex-start;
+    text-align: left;
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+.course-card button {
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #f0d2ff, #ffdbc3);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
 @media(max-width:680px) {

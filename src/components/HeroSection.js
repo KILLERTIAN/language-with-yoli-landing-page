@@ -12,7 +12,7 @@ function HeroSection() {
             {/* <video controls src={VideoBCS
             } autoPlay loop muted /> */}
 
-            <img src="images/about-us-cover-1.jpg" alt="" />
+            <img src="images/Landing-page-cover-2.png" alt="" />
             <div className="hero-gradient"></div>
             <div className="hero-text">
                 <h1>
