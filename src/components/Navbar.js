@@ -6,6 +6,7 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
     const [isActive, setIsActive] = useState(false);
+    const [navbar, setNavbar] = useState(false);
 
     const handleClick = () => setClick(!click);
     const handleClicks = event => {
@@ -28,9 +29,21 @@ function Navbar() {
 
     window.addEventListener('resize', showButton);
 
+    //NAV show or hide 
+    const changeBackground = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground);
+
+
     return (
         <>
-            <nav className='navbar'>
+            <nav className={navbar ? 'navbar active' : 'navbar'}>
                 <div className="navbar-container">
 
                     <Link to='/' className='Navbar-logo' ><img src="images/Language-with-yoli-logo.png" /></Link>

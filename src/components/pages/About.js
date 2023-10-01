@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import './About.css';
 // import VideoBCS from '../videos/Homepageintro.mp4';
 
@@ -8,23 +8,51 @@ function About() {
         // <div>About</div>
         <>
             <div className="about-us-container">
+                <Link to='/' className="back-home">
+                    <ion-icon name="arrow-back-outline"></ion-icon><h4>Back to home</h4>
+                </Link>
                 <div className="video-form">
-                    {/* <div className="intro-video">
-                        <video controls src={VideoBCS
-                        } loop />
-                    </div> */}
+                    <div className="vector">
+                        <h1>Take the <span>First</span> Step <br /> Register for <span>Spanish</span>  Classes</h1>
+                        <img src="images/free.png" alt="" />
+                    </div>
                     <div className="input-form">
                         <label htmlFor="">Enter your Name</label>
                         <input type="text" placeholder='Enter your Name' />
                         <label htmlFor="">Enter your E-mail</label>
                         <input type="email" placeholder='Enter your E-mail' />
-                        <label htmlFor="">Enter you Number</label>
-                        <input type="number" placeholder='Enter your Number' />
-                        <label htmlFor="">Enter your Age</label>
-                        <input type="number" placeholder='Enter your age' />
+                        <label htmlFor="">Enter your Phone Number</label>
+                        <input type="number" placeholder='Enter your Phone Number' />
+                        <label htmlFor="">Select your course</label>
+                        <div className="select-course">
+                            <input className='course-checkbox' type="checkbox" name='kid' />
+                            <label htmlFor="">Kid</label>
+                            <input className='course-checkbox' type="checkbox" name='teen' />
+                            <label htmlFor="">Teen</label>
+                            <input className='course-checkbox' type="checkbox" name='adult' />
+                            <label htmlFor="">Adult</label>
+                        </div>
 
                         <button className="form-submit-button">Enroll</button>
                     </div>
+
+
+                </div>
+                <div className="free-contact">
+
+                    <div className="contact-wrapper">
+                        <h1>Any Doubts? <span>Contact Us </span>here</h1>
+                        <div className="free-contact-block">
+                            <img src="images/whatsapp.png" alt="" />
+                            + 1 (516) 732-6794
+                        </div>
+                        <div className="free-contact-block">
+                            <img src="images/gmail.png" alt="" />
+                            info@languagewithyoli.com
+                        </div>
+                    </div>
+                    <img className='contact-free-img' src="images/free-contact.png" alt="" />
+
 
                 </div>
 

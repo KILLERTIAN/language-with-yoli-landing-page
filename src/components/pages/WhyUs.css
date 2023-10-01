@@ -31,7 +31,7 @@
 .question-whyus>h2 {
     font-size: 4em;
     font-weight: 600;
-    margin-left: 30px;
+    margin: 0px 0 20px 30px;
 }
 
 .question-whyus span {
@@ -211,9 +211,12 @@
 }
 
 .our-tutors ul li span {
-    font-size: 2em;
+    display: flex;
+    font-size: 1.7em;
     font-weight: 700;
     margin: 5px;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(to right, #ff498f, #ffa568, #ff62ff, #af46c4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -244,10 +247,18 @@
     text-align: center;
     border-radius: 50px;
     cursor: pointer;
+    transition: 0.25s;
     background: linear-gradient(145deg, #f8edff, #fffaee);
-    box-shadow: 10px 10px 40px #ffddfd,
-        -10px -10px 40px #fce3e3;
+    box-shadow: 8px 8px 30px #ffdafd,
+        -6px -6px 20px #ffdcdc;
     /* box-shadow: #ffc8fb 0px 13px 27px -5px, #ffe9e9 0px 8px 16px -8px; */
+}
+
+.why-us-card:hover {
+    scale: 1.02;
+    background: linear-gradient(145deg, #fefbff, #fff9f9);
+    box-shadow: 10px 10px 40px #ffdafd,
+        -8px -8px 30px #ffdcdc;
 }
 
 .why-us-card>img {
@@ -258,12 +269,13 @@
 }
 
 .why-us-card>h2 {
-    font-size: 26px;
+    font-size: 1.4em;
     margin: 10px;
+    letter-spacing: 1px;
 }
 
 .why-us-card>p {
-    font-size: 19px;
+    font-size: 1.2em;
 }
 
 .course-cards {
@@ -283,7 +295,7 @@
     width: 350px;
     padding: 1.5em;
     /* background: green; */
-    height: 400px;
+    height: 500px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -291,9 +303,17 @@
     border-radius: 50px;
     cursor: pointer;
     background: linear-gradient(145deg, #faf0ff, #fffbf3);
-    box-shadow: 10px 10px 50px #ffdafd,
-        -8px -8px 40px #ffdcdc;
+    transition: 0.25s;
+    box-shadow: 8px 8px 30px #ffdafd,
+        -6px -6px 20px #ffdcdc;
     /* box-shadow: #ffc8fb 0px 13px 27px -5px, #ffe9e9 0px 8px 16px -8px; */
+}
+
+.course-card:hover {
+    scale: 1.01;
+    background: linear-gradient(145deg, #fefbff, #fff9f9);
+    box-shadow: 8px 8px 40px #ffbffc,
+        -6px -6px 30px #ffbebe;
 }
 
 .course-card h2 {
@@ -301,14 +321,19 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 2.5em;
-    margin: 20px auto;
+    margin: 10px auto;
     /* text-align: start; */
+}
+
+.course-card img {
+    height: 160px;
+    width: 170px;
 }
 
 .course-card ul {
     align-items: center;
     justify-content: center;
-    margin: 20px 10px;
+    margin: 10px;
 }
 
 .course-card ul li {
@@ -320,11 +345,19 @@
 
 .course-card button {
     padding: 10px 20px;
-    background: linear-gradient(145deg, #f0d2ff, #ffdbc3);
+    background: linear-gradient(145deg, #ebc3ff, #ffd2b3);
     border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
+    border-radius: 12px;
+    font-size: 1.3em;
     font-weight: 500;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.course-card button:hover {
+    letter-spacing: 1.2px;
+    background: linear-gradient(145deg, #e5b2ff, #ffc7a1);
 }
 
 @media(max-width:680px) {

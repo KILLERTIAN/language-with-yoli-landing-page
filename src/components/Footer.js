@@ -52,7 +52,7 @@ function Footer() {
 
                         <div class='footer-link-items'>
                             <h2>Social Media</h2>
-                            <Link to='/'>LinkedIn</Link>
+                            <Link to='/'>Whatsapp</Link>
                             <Link to='/'>Youtube</Link>
                             <Link to='/'>Instagram</Link>
                             <Link to='/'>Facebook</Link>
@@ -99,12 +99,12 @@ function Footer() {
                             <ion-icon name="logo-youtube"></ion-icon>
                         </Link>
                         <Link
-                            className='social-icon-link-linkedin'
+                            className='social-icon-link-whatsapp'
                             to='/'
                             target='_blank'
                             aria-label='LinkedIn'
                         >
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <img src="images/whatsapp.png" alt="" />
                         </Link>
                     </div>
                 </div>

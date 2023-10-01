@@ -1,47 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './WhyUs.css';
+import { Link } from 'react-router-dom';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+// import { motion } from "framer-motion";
 // import VideoBCS from '../videos/Homepageintro.mp4';
-
-
 function WhyUs() {
+    const [counterOn, setCounterOn] = useState(false);
     return (
         <div className='whyus-container'>
+
             <div className="our-tutors">
-                <ul>
-                    <li><span>20+</span> Years of Teaching Experience</li>
-                    <li><span>400+</span> Students Taught Over Years</li>
-                    <li><span>6+</span>Teaching Awards</li>
-                </ul>
+                <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+
+                    <ul>
+
+                        <li><span>
+                            {counterOn && <CountUp start={0} end={20} duration={3} delay={0} />}
+
+                            +</span> Years of Teaching Experience</li>
+                        <li><span>{counterOn && <CountUp start={0} end={500} duration={2} delay={0} />}+</span> Students Taught Over Years</li>
+                        <li><span>{counterOn && <CountUp start={0} end={10} duration={4} delay={0} />}+</span>Teaching Awards</li>
+                    </ul>
+                </ScrollTrigger>
             </div>
+
+
             <div className="course-cards">
                 <div className="course-card">
-                    {/* <img src="images/teacher.png" alt="" /> */}
+
                     <h2>KIDS</h2>
+                    <img src="images/kid-vector.png" alt="" />
                     <ul>
                         <li>Flexible Schedule</li>
                         <li>Personalized Lesson Plans</li>
                         <li>Fun & Easy Way to Learn</li>
+                        <li>Native Teachers</li>
                     </ul>
-                    <button>Learn more</button></div>
+                    <Link to="/register">
+                        <button>Learn more</button>
+                    </Link>
+                </div>
 
                 <div className="course-card">
                     {/* <img src="images/exam.png" alt="" /> */}
-                    <h2>Teens</h2><ul>
+                    <h2>Teens</h2>
+                    <img src="images/teen-vector.png" alt="" />
+                    <ul></ul>
+                    <ul>
                         <li>100% Guaranteed Improved Test Scores</li>
                         <li>SAT/FLACS Test Prep</li>
                         <li>Conversational Spanish Skills</li>
                     </ul>
-                    <button>Learn more</button></div>
+                    <Link to="/register">
+                        <button>Learn more</button>
+                    </Link></div>
 
                 <div className="course-card">
                     {/* <img src="images/efficiency.png" alt="" /> */}
                     <h2>Adults</h2>
+                    <img src="images/adult-vector-2.png" alt="" />
+                    <ul></ul>
                     <ul>
                         <li>Learn At Your Own Pace</li>
                         <li>Tailored to your Needs & Schedule</li>
                         <li>Spanish for Travel or Live Abroad</li>
                     </ul>
-                    <button>Learn more</button></div>
+                    <Link to="/register">
+                        <button>Learn more</button>
+                    </Link></div>
             </div>
             <div className="question-whyus-video">
                 <div className="question-whyus">

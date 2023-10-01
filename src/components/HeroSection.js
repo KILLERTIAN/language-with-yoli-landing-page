@@ -3,6 +3,7 @@ import '../App.css';
 // import { Button } from './Button';
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
+import Typed from 'react-typed';
 // import VideoBCS from './videos/Homepageintro.mp4';
 
 
@@ -15,11 +16,20 @@ function HeroSection() {
             <img src="images/Landing-page-cover-2.png" alt="" />
             <div className="hero-gradient"></div>
             <div className="hero-text">
-                <h1>
-                    <span>Unlock Your </span>Potential<br />
-                    Learn Spanish the Right Way with <span1>Yoli</span1></h1>
-                <p><span2>Get a 1 to 1 Free Trial Lesson now </span2></p>
-                <Link to="/free-trial" className='hero-free-trial-button'><button>Free Trial</button></Link>
+                <h1>Spanish Lessons for
+                    <span> All Age Groups</span><br />
+                    <Typed
+                        strings={[
+                            'Explore',
+                            'Discover',
+                            'Grow']}
+                        typeSpeed={150}
+                        backSpeed={100}
+                        loop >
+                    </Typed>
+                </h1>
+                <p><span2>Get a 1 Hour Free Trial Lesson now </span2></p>
+                <Link to="/register" className='hero-free-trial-button'><button>Free Trial</button></Link>
             </div>
 
 

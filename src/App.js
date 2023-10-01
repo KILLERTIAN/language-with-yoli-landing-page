@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import HeroSection from './components/HeroSection';
+// import HeroSection from './components/HeroSection';
 import Home from './components/pages/Home';
 import Footer from './components/Footer';
 import About from './components/pages/About';
@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
-          <Route path='/free-trial' element={<About />} />
+          <Route path='/register' element={<About />} />
           <Route path='/courses' />
           <Route path='/contact' />
           <Route path='/freetrial' />
