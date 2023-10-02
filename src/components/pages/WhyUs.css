@@ -223,6 +223,11 @@
 
 }
 
+.our-tutors img {
+    height: 15vh;
+}
+
+
 .why-us-cards {
     display: flex;
     flex-direction: row;
@@ -362,21 +367,40 @@
 
 @media(max-width:680px) {
     .our-tutors {
-        height: 25vh;
+        height: 35vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     .our-tutors ul {
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
+        margin: 0;
+    }
+
+    .our-tutors ul li {
+        font-size: 1.1em;
+        margin: 5px 0;
+        justify-content: flex-start;
     }
 
     .our-tutors ul li span {
-        margin: 5px 10px;
+        margin: 5px;
+        font-size: 1.3em;
+    }
+
+    .our-tutors img {
+        height: 70px;
+        width: 80px;
     }
 
     .value-points {
         flex-direction: column;
-        margin: auto;
+        margin: 0 20px;
     }
 
     .points {
@@ -385,6 +409,15 @@
 
     .img-point {
         margin: 10px;
+    }
+
+    .course-cards {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 300px;
+        margin: 20px 10px;
     }
 
     .why-us-cards {

@@ -19,8 +19,13 @@ function WhyUs() {
                             {counterOn && <CountUp start={0} end={20} duration={3} delay={0} />}
 
                             +</span> Years of Teaching Experience</li>
-                        <li><span>{counterOn && <CountUp start={0} end={500} duration={2} delay={0} />}+</span> Students Taught Over Years</li>
-                        <li><span>{counterOn && <CountUp start={0} end={10} duration={4} delay={0} />}+</span>Teaching Awards</li>
+                        <li><span>{counterOn && <CountUp start={0} end={5000} duration={2} delay={0} />}+</span> Students Taught Over Years</li>
+                        <li><span>{counterOn && <CountUp start={0} end={5} duration={4} delay={0} />}+</span>Teaching Awards</li>
+                        <li>
+                            <span>
+                                {/* {counterOn && <CountUp start={0} end={5} duration={4} delay={0} />} */}
+
+                                <img src="images/rating-2.png" alt="" /></span> Google Reviews</li>
                     </ul>
                 </ScrollTrigger>
             </div>
@@ -44,7 +49,7 @@ function WhyUs() {
 
                 <div className="course-card">
                     {/* <img src="images/exam.png" alt="" /> */}
-                    <h2>Teens</h2>
+                    <h2>TEENS</h2>
                     <img src="images/teen-vector.png" alt="" />
                     <ul></ul>
                     <ul>
@@ -58,7 +63,7 @@ function WhyUs() {
 
                 <div className="course-card">
                     {/* <img src="images/efficiency.png" alt="" /> */}
-                    <h2>Adults</h2>
+                    <h2>ADULTS</h2>
                     <img src="images/adult-vector-2.png" alt="" />
                     <ul></ul>
                     <ul>

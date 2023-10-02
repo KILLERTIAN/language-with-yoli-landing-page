@@ -16,7 +16,7 @@ function HeroSection() {
             <img src="images/Landing-page-cover-2.png" alt="" />
             <div className="hero-gradient"></div>
             <div className="hero-text">
-                <h1>Spanish Lessons for
+                <h1><span1>Online</span1> Spanish  Lessons for <br />
                     <span> All Age Groups</span><br />
                     <Typed
                         strings={[

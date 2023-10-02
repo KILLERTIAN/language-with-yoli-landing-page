@@ -91,8 +91,11 @@
     -webkit-background-clip: text;
 }
 
-.hero-text span2 {
-    color: #92ffed;
+.hero-text span1 {
+    background: linear-gradient(to right, #00d6a0, #1180ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1.34em;
 }
 
 .hero-free-trial-button {
@@ -135,24 +138,46 @@
 
 @media(max-width:680px) {
     .hero-container {
-        justify-content: center;
+        justify-content: flex-end;
+        /* align-items: flex-end; */
         height: 85vh;
     }
 
+    .hero-container img {
+        width: 180%;
+        height: 55vh;
+        top: 0vh;
+        /* right: 0vw; */
+        left: -80vw;
+        object-fit: initial;
+    }
+
+    .hero-container::before {
+        clip-path: circle(70% at 50% 100%);
+    }
+
     .hero-text {
-        margin: 10px 0 20px 0;
+        margin: 3vh 2vh;
+        width: 100%;
     }
 
     .hero-text>h1 {
-        font-size: 2.5em;
-        margin: 3vh 2vh;
+        font-size: 2.2em;
+
     }
 
     .hero-free-trial-button {
         margin: 25px 10px;
+
     }
 
     .hero-text>p {
+        font-size: 1.2em;
         margin: 5px;
+    }
+
+    .hero-free-trial-button button {
+        height: 8vh;
+        width: 180px;
     }
 }
