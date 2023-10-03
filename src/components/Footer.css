@@ -221,6 +221,8 @@
 }
 
 @media screen and (max-width: 820px) {
+    .footer-container {}
+
     .social-logo img {
         width: 50vw;
     }

@@ -26,11 +26,11 @@ function About() {
                         <label htmlFor="">Select your course</label>
                         <div className="select-course">
                             <input className='course-checkbox' type="checkbox" name='kid' />
-                            <label htmlFor="">Kid</label>
+                            <label htmlFor="">Kids</label>
                             <input className='course-checkbox' type="checkbox" name='teen' />
-                            <label htmlFor="">Teen</label>
+                            <label htmlFor="">Teens</label>
                             <input className='course-checkbox' type="checkbox" name='adult' />
-                            <label htmlFor="">Adult</label>
+                            <label htmlFor="">Adults</label>
                         </div>
 
                         <button className="form-submit-button">Enroll</button>

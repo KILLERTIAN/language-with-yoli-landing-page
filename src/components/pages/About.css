@@ -254,3 +254,63 @@
     background: #111;
     cursor: pointer;
 }
+
+@media(max-width:680px) {
+    /* .about-us-container {} */
+
+    .video-form {
+        flex-direction: column;
+        height: unset;
+        width: 100%;
+    }
+
+    .vector>h1 {
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .vector>img {
+        width: 80%;
+    }
+
+    .input-form {
+        width: 100%;
+        margin: 0;
+        padding: 1em 1.1em;
+    }
+
+    .input-form input {
+        width: 95%;
+
+    }
+
+    .input-form label {
+        font-size: 1.1em;
+    }
+
+    .select-course {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .select-course label {
+        font-size: 1.1em;
+        margin: 5px 0;
+    }
+
+    .course-checkbox {
+        height: 1em !important;
+        width: 1em !important;
+        /* margin: 0 !important; */
+    }
+
+    .free-contact {
+        flex-direction: column;
+        height: unset;
+        padding: 1em;
+    }
+
+    .contact-free-img {
+        width: 100%;
+    }
+}

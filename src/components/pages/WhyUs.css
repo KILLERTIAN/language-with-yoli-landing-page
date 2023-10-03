@@ -366,8 +366,15 @@
 }
 
 @media(max-width:680px) {
+    .whyus-container {
+        position: relative;
+        top: 0vh;
+    }
+
     .our-tutors {
-        height: 35vh;
+        position: relative;
+        top: 0vh;
+        height: unset;
         width: 100%;
         display: flex;
         align-items: flex-start;

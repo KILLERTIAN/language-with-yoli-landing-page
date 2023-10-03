@@ -139,31 +139,45 @@
 @media(max-width:680px) {
     .hero-container {
         justify-content: flex-end;
-        /* align-items: flex-end; */
-        height: 85vh;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
     }
 
     .hero-container img {
         width: 180%;
-        height: 55vh;
+        height: 50vh;
         top: 0vh;
         /* right: 0vw; */
-        left: -80vw;
+        /* left: -80vw; */
+        right: 0;
         object-fit: initial;
+        overflow-x: hidden;
     }
 
     .hero-container::before {
-        clip-path: circle(70% at 50% 100%);
+        /* width: 100vw; */
+        clip-path: circle(75% at 50% 100%);
     }
 
     .hero-text {
-        margin: 3vh 2vh;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        padding: 2em;
+        padding-bottom: 1em;
         width: 100%;
+        /* overflow-y: hidden; */
     }
 
     .hero-text>h1 {
+        width: 90%;
         font-size: 2.2em;
 
+    }
+
+    .hero-text>span1 {
+        font-size: 2.3em;
     }
 
     .hero-free-trial-button {
