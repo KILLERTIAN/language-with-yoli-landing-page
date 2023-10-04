@@ -227,6 +227,10 @@
     height: 15vh;
 }
 
+.goo-rev {
+    text-decoration: none;
+    color: #111;
+}
 
 .why-us-cards {
     display: flex;
@@ -405,12 +409,20 @@
         width: 80px;
     }
 
+    .goo-rev {
+        text-decoration: none;
+        color: #111;
+    }
+
     .value-points {
         flex-direction: column;
         margin: 0 20px;
+        align-items: flex-start;
     }
 
     .points {
+        align-items: flex-start;
+        justify-content: center;
         margin: 0;
     }
 

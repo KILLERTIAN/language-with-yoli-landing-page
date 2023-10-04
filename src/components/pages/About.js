@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
 // import VideoBCS from '../videos/Homepageintro.mp4';
 
 function About() {
+
+    const [user, setUser] = useState(
+        {
+            Name: '', Email: '', Number: '', Course: '', Timing: ''
+        }
+    )
+    let name, value
+    console.log(user)
+    const data = (e) => {
+        name = e.target.name;
+        value = e.target.value;
+        setUser({ ...user, [name]: value });
+
+    }
+
     return (
         // <div>About</div>
         <>
@@ -18,19 +33,37 @@ function About() {
                     </div>
                     <div className="input-form">
                         <label htmlFor="">Enter your Name</label>
-                        <input type="text" placeholder='Enter your Name' />
+
+                        <input type="text" placeholder='Enter your Name' name='Name' value={user.Name} required onChange={data} />
+
                         <label htmlFor="">Enter your E-mail</label>
-                        <input type="email" placeholder='Enter your E-mail' />
+
+                        <input type="email" placeholder='Enter your E-mail' name='Email' value={user.Email} required onChange={data} />
+
                         <label htmlFor="">Enter your Phone Number</label>
-                        <input type="number" placeholder='Enter your Phone Number' />
-                        <label htmlFor="">Select your course</label>
+
+                        {/* <input type="text" placeholder='Enter your Phone Number' name='Phone Number' value={user.Number} required onChange={data} /> */}
+                        <input type="number" placeholder='Enter your Phone Number' name='Number' value={user.Number} required onChange={data} />
+
+
+                        <label htmlFor="">Select your Course</label>
+
                         <div className="select-course">
-                            <input className='course-checkbox' type="checkbox" name='kid' />
-                            <label htmlFor="">Kids</label>
-                            <input className='course-checkbox' type="checkbox" name='teen' />
-                            <label htmlFor="">Teens</label>
-                            <input className='course-checkbox' type="checkbox" name='adult' />
-                            <label htmlFor="">Adults</label>
+                            <input className='course-checkbox' type="checkbox" name='Course' value={user.Course} />
+                            <label htmlFor="">Kids(3-10)</label>
+                            <input className='course-checkbox' type="checkbox" name='Course' />
+                            <label htmlFor="">Teens(11-18)</label>
+                            <input className='course-checkbox' type="checkbox" name='Course' />
+                            <label htmlFor="">Adults(19+)</label>
+                        </div>
+                        <label htmlFor="">Select your Timing</label>
+                        <div className="select-timing">
+                            <input className='course-checkbox' type="checkbox" name='Timing' />
+                            <label htmlFor="">Morning</label>
+                            <input className='course-checkbox' type="checkbox" name='Timing' />
+                            <label htmlFor="">Afternoon</label>
+                            <input className='course-checkbox' type="checkbox" name='Timing' />
+                            <label htmlFor="">Evening</label>
                         </div>
 
                         <button className="form-submit-button">Enroll</button>
@@ -41,7 +74,7 @@ function About() {
                 <div className="free-contact">
 
                     <div className="contact-wrapper">
-                        <h1>Any Doubts? <span>Contact Us </span>here</h1>
+                        <h1>Any Questions? <span>Contact Us </span>here</h1>
                         <div className="free-contact-block">
                             <img src="images/whatsapp.png" alt="" />
                             + 1 (516) 732-6794
@@ -65,13 +98,13 @@ function About() {
 
                     <div className="points">
                         <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Virtual Online 24/7</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Personalized Lesson Plans</div>
+                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Personalized onChange={data}Lesson Plans</div>
                         <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>For All School Grades</div>
                         <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Children or Adults</div>
                     </div>
                     <div className="points">
                         <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Private or Group Lessons</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Organized & Dedicated Teachers</div>
+                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Organized onChange={data}& Dedicated onChange={data}Teachers</div>
                         <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Fun, Easy & Creative</div>
                         <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Continuous Improvement</div>
                     </div>

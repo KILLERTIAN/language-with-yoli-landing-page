@@ -83,7 +83,7 @@ function Footer() {
                         </Link>
                         <Link
                             className='social-icon-link-instagram'
-                            to='/'
+                            to='https://www.instagram.com/languagewithyoli/?hl=en'
                             target='_blank'
                             aria-label='Instagram'
                         >
@@ -92,7 +92,7 @@ function Footer() {
                         </Link>
                         <Link
                             className='social-icon-link-youtube'
-                            to='/'
+                            to='https://www.youtube.com/@languagewithyoli'
                             target='_blank'
                             aria-label='Twitter'
                         >
@@ -100,7 +100,7 @@ function Footer() {
                         </Link>
                         <Link
                             className='social-icon-link-whatsapp'
-                            to='/'
+                            to='https://api.whatsapp.com/send/?phone=15167326794&text&type=phone_number&app_absent=0'
                             target='_blank'
                             aria-label='LinkedIn'
                         >

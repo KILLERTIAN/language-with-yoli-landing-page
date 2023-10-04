@@ -9,6 +9,9 @@ function WhyUs() {
     const [counterOn, setCounterOn] = useState(false);
     return (
         <div className='whyus-container'>
+            <div className="why-us-backhider">
+
+            </div>
 
             <div className="our-tutors">
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
@@ -25,7 +28,8 @@ function WhyUs() {
                             <span>
                                 {/* {counterOn && <CountUp start={0} end={5} duration={4} delay={0} />} */}
 
-                                <img src="images/rating-2.png" alt="" /></span> Google Reviews</li>
+                                <img src="images/rating-2.png" alt="" /></span> <Link className='goo-rev' to='https://www.google.com/search?client=opera-gx&q=language+with+yoli&sourceid=opera&ie=UTF-8&oe=UTF-8' target='_blank'>Google Reviews</Link>
+                        </li>
                     </ul>
                 </ScrollTrigger>
             </div>

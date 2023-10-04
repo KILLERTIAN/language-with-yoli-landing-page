@@ -23,7 +23,7 @@
     display: flex;
     position: absolute;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-between;
     flex-direction: row;
     /* padding: 10px; */
 }
@@ -48,12 +48,15 @@
 }
 
 .nav-free-trial-button button {
-    height: 10vh;
-    width: 200px;
-    background: rgb(255, 234, 143);
+    height: 5vh;
+    padding: 0px 15px;
+    margin-right: 20px;
+    /* width: 200px; */
+    background: rgba(255, 179, 143, 0.356);
     border: none;
-    color: #111;
-    font-size: 1.1em;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 1em;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
@@ -85,5 +88,10 @@
         /* margin-top: 5vh; */
         /* margin-left: 10px; */
 
+    }
+
+    .nav-free-trial-button {
+        display: none;
+        visibility: hidden;
     }
 }
