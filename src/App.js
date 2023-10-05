@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import Footer from './components/Footer';
 import About from './components/pages/About';
 import ScrollToTop from './ScrollToTop';
+import Thank from './components/pages/Thank';
 
 function App() {
   return (
@@ -17,10 +18,7 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/register' element={<About />} />
-          <Route path='/courses' />
-          <Route path='/contact' />
-          <Route path='/freetrial' />
-          <Route path='/sign-up' />
+          <Route path='/thank-you' element={<Thank />} />
 
         </Routes>
 

@@ -72,69 +72,7 @@
     color: #24da7f;
 }
 
-.course_all-card {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 450px;
-    width: 350px;
-    background: linear-gradient(to right, #fdeff42d, #fcefe71a, #ffdaff35, #f5c1ff35);
-    margin: 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    /* border: 3px solid #000000; */
-    transition: 0.25s;
-}
 
-
-.course_all-card:hover {
-    transform: scale(1.01);
-}
-
-.course_all-card h2 {
-    font-size: 4em;
-    font-weight: 500;
-    color: #fff;
-}
-
-.course_all-card button {
-    position: absolute;
-    bottom: 30px;
-    padding: 10px 20px;
-    margin: 30px;
-    margin-top: 50px;
-    font-size: 1.6em;
-    color: #fff;
-    font-weight: 500;
-    transition: 0.65s;
-    border-radius: 7px;
-    border: 2.5px solid #ffe6e0;
-    background: linear-gradient(to right, #ffa088, #fdb483, #ddaaff, hsl(290, 100%, 75%));
-    cursor: pointer;
-
-}
-
-.course_all-card button:hover {
-    transform: scale(1.05);
-}
-
-.course_all-card img {
-    position: absolute;
-    object-fit: cover;
-    z-index: -9;
-    height: 450px;
-    width: 350px;
-    transition: 0.25s;
-    border-radius: 20px;
-}
-
-.course-downvideo {
-    width: 100%;
-    aspect-ratio: 16/9;
-    margin: 0;
-}
 
 .value-heading {
     font-size: 75px;
@@ -246,7 +184,7 @@
 
 .why-us-card {
     display: flex;
-    width: 350px;
+    width: 27vw;
     padding: 1.5em;
     /* background: green; */
     height: 400px;
@@ -301,7 +239,7 @@
 
 .course-card {
     display: flex;
-    width: 350px;
+    width: 27vw;
     padding: 1.5em;
     /* background: green; */
     height: 500px;
@@ -369,7 +307,108 @@
     background: linear-gradient(145deg, #e5b2ff, #ffc7a1);
 }
 
-@media(max-width:680px) {
+@media(width <300px) {
+    .whyus-container {
+        position: relative;
+        top: 0vh;
+    }
+
+    .our-tutors {
+        position: relative;
+        top: 0vh;
+        height: unset;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .our-tutors ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .our-tutors ul li {
+        font-size: 1.1em;
+        margin: 5px;
+        justify-content: flex-start;
+    }
+
+    .our-tutors ul li span {
+        margin: 5px;
+        font-size: 1.3em;
+    }
+
+    .our-tutors img {
+        height: 70px;
+        width: auto;
+    }
+
+    .goo-rev {
+        text-decoration: none;
+        color: #111;
+    }
+
+    .value-points {
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: flex-start;
+    }
+
+    .points {
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .img-point {
+        margin: 10px;
+    }
+
+    .course-cards {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 85vw;
+        height: unset;
+        margin: 20px 10px;
+    }
+
+    .why-us-cards {
+        flex-direction: column;
+
+    }
+
+    .why-us-card {
+        width: 85vw;
+        height: unset;
+        margin: 20px 10px;
+    }
+
+    .img-point ion-icon {
+        margin: 10px;
+        min-width: 28px;
+    }
+
+    .question-whyus>h2 {
+        font-size: 3em;
+        font-weight: 600;
+        /* margin-left: 30px; */
+    }
+
+    .question-whyus>p {
+        font-size: 1.2em;
+        margin: 0;
+        /* font-weight: 600; */
+        /* margin-left: 30px; */
+    }
+}
+
+@media(300px <=width <=600px) {
     .whyus-container {
         position: relative;
         top: 0vh;

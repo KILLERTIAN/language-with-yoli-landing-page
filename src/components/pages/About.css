@@ -56,7 +56,7 @@
     padding: 2em;
     justify-content: space-between;
     align-items: center;
-    /* height: 90vh; */
+    min-height: 90vh;
 }
 
 .intro-video video {
@@ -101,9 +101,9 @@
 
 .input-form label {
     color: #222;
-    font-size: 1.5em;
-    font-weight: 500;
-    margin: 10px 5px;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 10px 0px 10px 0;
     left: 0;
 }
 
@@ -111,7 +111,7 @@
     color: #111;
     border: 1.5px solid #fcd467;
     border-radius: 10px;
-    height: 45px;
+    height: 5vh;
     width: 400px;
     margin: 5px;
     padding: 0 20px;
@@ -123,8 +123,8 @@
 }
 
 .course-checkbox {
-    height: 20px !important;
-    width: 20px !important;
+    height: 18px !important;
+    width: 18px !important;
 }
 
 .select-course {
@@ -132,7 +132,7 @@
     width: 100%;
     max-width: 400px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
 
 }
@@ -140,6 +140,16 @@
 .select-course label {
     font-size: 1.1em;
     margin: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    flex-direction: row;
+}
+
+.select-course label span {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 3px;
 }
 
 .select-timing {
@@ -204,9 +214,9 @@
     font-size: 1.3em;
     font-weight: 500;
     margin: 10px auto;
-    padding: 10px 20px;
-    height: 50px;
-    width: 200px;
+    /* padding: 10px 20px; */
+    height: 6vh;
+    width: 40%;
     text-align: center;
     border: 2px solid #fda062;
     background: #ffb350;
@@ -277,7 +287,99 @@
     cursor: pointer;
 }
 
-@media(max-width:680px) {
+@media(width <300px) {
+    .about-us-container {
+        padding: none;
+    }
+
+    .video-form {
+        flex-direction: column;
+        height: unset;
+        width: 100%;
+        padding: 1em 0.5em;
+    }
+
+    .vector>h1 {
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .vector>img {
+        width: 80%;
+    }
+
+    .input-form {
+        width: 100%;
+        margin: 0;
+        padding: 1em 0.5em;
+    }
+
+    .input-form input {
+        width: 95%;
+
+    }
+
+    .input-form label {
+        font-size: 1.1em;
+    }
+
+    .select-course {
+        width: 100%;
+
+
+        justify-content: space-evenly;
+    }
+
+    .select-course label {
+        font-size: 1.1em;
+        margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select-timing {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .select-timing>label {
+        font-size: 0.85em !important;
+        margin: 5px 0;
+    }
+
+    .course-checkbox {
+        height: 1em !important;
+        width: 1em !important;
+        /* margin: 0 !important; */
+    }
+
+    .free-contact {
+        flex-direction: column;
+        height: unset;
+        padding: 1em;
+    }
+
+    .contact-wrapper>h1 {
+        font-size: 1.5em;
+        margin: 5px 20px;
+
+    }
+
+    .free-contact-block {
+        font-size: 1.1em;
+    }
+
+    .free-contact-block>img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact-free-img {
+        width: 100%;
+    }
+}
+
+@media(300px <=width <=600px) {
     .about-us-container {
         padding: none;
     }
@@ -314,12 +416,16 @@
 
     .select-course {
         width: 100%;
+
+
         justify-content: space-evenly;
     }
 
     .select-course label {
         font-size: 1.1em;
         margin: 5px 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .select-timing {

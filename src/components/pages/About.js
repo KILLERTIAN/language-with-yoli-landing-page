@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './About.css';
 // import VideoBCS from '../videos/Homepageintro.mp4';
 
 function About() {
+    const navigate = useNavigate();
 
     const [user, setUser] = useState(
         {
@@ -17,10 +18,40 @@ function About() {
         value = e.target.value;
         setUser({ ...user, [name]: value });
 
+    };
+    //Connect with firebase
+    const submitData = async (e) => {
+        e.preventDefault();
+
+        if (!user.Name || !user.Email || !user.Number || !user.Course || !user.Timing) {
+            alert("Please fill out all fields.");
+            return; // Prevent form submission
+        }
+
+        const {
+            Name, Email, Number, Course, Timing
+        } = user;
+        const res = await
+            fetch("https://language-with-yoli-lp-default-rtdb.firebaseio.com/userDataRecords.json", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    Name, Email, Number, Course, Timing
+                })
+            });
+        if (res) {
+            setUser({
+                Name: '', Email: '', Number: '', Course: '', Timing: ''
+            })
+            navigate('/thank-you');
+        } else {
+            alert("FILL all fields")
+        };
     }
 
     return (
-        // <div>About</div>
         <>
             <div className="about-us-container">
                 <Link to='/' className="back-home">
@@ -49,24 +80,24 @@ function About() {
                         <label htmlFor="">Select your Course</label>
 
                         <div className="select-course">
-                            <input className='course-checkbox' type="checkbox" name='Course' value={user.Course} />
-                            <label htmlFor="">Kids(3-10)</label>
-                            <input className='course-checkbox' type="checkbox" name='Course' />
-                            <label htmlFor="">Teens(11-18)</label>
-                            <input className='course-checkbox' type="checkbox" name='Course' />
-                            <label htmlFor="">Adults(19+)</label>
+                            <input className='course-checkbox' type="radio" name='Course' value="Kids" checked={user.Course === "Kids"} onChange={data} />
+                            <label htmlFor="">Kids <span>(3-10)</span></label>
+                            <input className='course-checkbox' type="radio" name='Course' value="Teens" checked={user.Course === "Teens"} onChange={data} />
+                            <label htmlFor="">Teens <span>(11-18)</span></label>
+                            <input className='course-checkbox' type="radio" name='Course' value="Adults" checked={user.Course === "Adults"} onChange={data} />
+                            <label htmlFor="">Adults <span>(19+)</span></label>
                         </div>
                         <label htmlFor="">Select your Timing</label>
                         <div className="select-timing">
-                            <input className='course-checkbox' type="checkbox" name='Timing' />
+                            <input className='course-checkbox' type="radio" name='Timing' value="Morning" checked={user.Timing === "Morning"} onChange={data} />
                             <label htmlFor="">Morning</label>
-                            <input className='course-checkbox' type="checkbox" name='Timing' />
+                            <input className='course-checkbox' type="radio" name='Timing' value="Afternoon" checked={user.Timing === "Afternoon"} onChange={data} />
                             <label htmlFor="">Afternoon</label>
-                            <input className='course-checkbox' type="checkbox" name='Timing' />
+                            <input className='course-checkbox' type="radio" name='Timing' value="Evening" checked={user.Timing === "Evening"} onChange={data} />
                             <label htmlFor="">Evening</label>
                         </div>
 
-                        <button className="form-submit-button">Enroll</button>
+                        <button className="form-submit-button" onClick={submitData}>Enroll</button>
                     </div>
 
 
@@ -88,36 +119,9 @@ function About() {
 
 
                 </div>
-
-
-                {/* <div className="breaker-line">
-
-                </div>
-                <h1 className='value-heading'>Online <span>1 to 1 Spanish</span> Lessons</h1>
-                <div className="value-points">
-
-                    <div className="points">
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Virtual Online 24/7</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Personalized onChange={data}Lesson Plans</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>For All School Grades</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Children or Adults</div>
-                    </div>
-                    <div className="points">
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Private or Group Lessons</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Organized onChange={data}& Dedicated onChange={data}Teachers</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Fun, Easy & Creative</div>
-                        <div className="img-point"><ion-icon name="checkmark-sharp"></ion-icon>Continuous Improvement</div>
-                    </div>
-                </div>
-                <div className="breaker-line">
-
-                </div>
-                <div className="our-tutors">
-
-                </div> */}
             </div>
         </>
     )
 }
 
-export default About
+export default About;

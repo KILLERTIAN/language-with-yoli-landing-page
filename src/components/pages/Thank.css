@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 'Outfit', 'sans-serif';
+}
+
+.thank-container {
+    top: 10vh;
+    /* height: 90vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #ffc0a7, hsl(55, 100%, 83%));
+    /* position: absolute; */
+}
+
+.back-home-thank {
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    /* background: #fff; */
+}
+
+.back-home-thank ion-icon {
+    height: 30px;
+    width: 30px;
+    margin: 6px;
+    color: black;
+}
+
+.back-home-thank h4 {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.img-thank {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-thank>img {
+    width: 50%;
+}
+
+.img-thank .thank-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 1.5em;
+}
+
+.thank-text>h1 {
+    font-size: 2.9em;
+    background: linear-gradient(to right, #af4fe7, #ff5c92, #ff5555, #ffb515);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 10px 0;
+}
+
+.thank-text>p {
+    font-size: 1.4em;
+    padding: 10px 0;
+}
+
+
+@media(width <300px) {
+    .img-thank {
+        flex-direction: column;
+    }
+
+    .img-thank .thank-text {
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .img-thank>img {
+        width: 90%;
+    }
+}
+
+@media(300px <=width <=600px) {
+    .img-thank {
+        flex-direction: column;
+    }
+
+    .img-thank .thank-text {
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .img-thank>img {
+        width: 90%;
+    }
+}

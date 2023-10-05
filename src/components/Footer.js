@@ -10,24 +10,10 @@ function Footer() {
                 <section className='footer-subscription'>
                     <div class='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            <img src="images/Language-with-yoli-logo.png" />
+                            <img src="images/Language-with-yoli-logo.png" alt='Language with Yoli' />
                         </Link>
                     </div>
-                    {/* <p className='footer-subscription-heading'>
-                        Join the
-                        <span>  Newsletter</span>
-                    </p>
-                    <div className='input-areas'>
-                        <form>
-                            <input
-                                className='footer-input'
-                                name='email'
-                                type='email'
-                                placeholder='Your Email'
-                            />
-                            <button className='footer-submit-button'>Submit</button>
-                        </form>
-                    </div> */}
+
                 </section>
                 <div class='footer-links'>
                     <div className='footer-link-wrapper'>
@@ -52,15 +38,15 @@ function Footer() {
 
                         <div class='footer-link-items'>
                             <h2>Social Media</h2>
-                            <Link to='/'>Whatsapp</Link>
-                            <Link to='/'>Youtube</Link>
-                            <Link to='/'>Instagram</Link>
-                            <Link to='/'>Facebook</Link>
+                            <Link to='https://api.whatsapp.com/send/?phone=15167326794&text&type=phone_number&app_absent=0'>Whatsapp</Link>
+                            <Link to='https://www.youtube.com/@languagewithyoli'>Youtube</Link>
+                            <Link to='https://www.instagram.com/languagewithyoli/?hl=en'>Instagram</Link>
+                            <Link to='https://www.facebook.com/languagewithyoli/'>Facebook</Link>
                         </div>
                         <div class='footer-link-items'>
                             <h2>Contact Us</h2>
-                            <Link to='/sign-up'>+ 1 (516) 732-6794</Link>
-                            <Link to='/sign-up'>info@languagewithyoli.com</Link>
+                            <Link to='https://api.whatsapp.com/send/?phone=15167326794&text&type=phone_number&app_absent=0'>+ 1 (516) 732-6794</Link>
+                            <Link to='/' className='foot-mail'>info@languagewithyoli.com</Link>
 
                         </div>
                     </div>
