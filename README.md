@@ -2,9 +2,9 @@
 
 This is the landing page made for a client who is based in the USA and teaches Spanish Online
 
-Deployed Link:- ![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/8ba870aa-72e6-4755-a2d6-4e576ce7d656)
+Deployed Link:- https://language-with-yoli-lp.web.app
 
-Preview :-
+Preview:-
 
 ![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/83a558f4-0953-4bd4-b3ae-109b81d2fbe4)
 
