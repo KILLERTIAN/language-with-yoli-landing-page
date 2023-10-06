@@ -6,6 +6,8 @@ Deployed Link:- https://language-with-yoli-lp.web.app
 
 Preview:-
 
+![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/2fe1d241-7ba4-46b8-9729-fa451e0f6cc2)
+
 ![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/83a558f4-0953-4bd4-b3ae-109b81d2fbe4)
 
 ![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/f2a260f4-99d7-4e23-b6fb-c721fe9b6725)
