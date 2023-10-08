@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './About.css';
-// import VideoBCS from '../videos/Homepageintro.mp4';
+import VideoBCS from '../videos/register.mp4';
 
 function About() {
     const navigate = useNavigate();
@@ -60,7 +60,9 @@ function About() {
                 <div className="video-form">
                     <div className="vector">
                         <h1>Take the <span>First</span> Step <br /> Register for <span>Spanish</span>  Classes</h1>
-                        <img src="images/free.png" alt="" />
+                        {/* <img src="images/free.png" alt="" /> */}
+                        <video controls src={VideoBCS
+                        } autoPlay loop />
                     </div>
                     <div className="input-form">
                         <label htmlFor="">Enter your Name</label>
