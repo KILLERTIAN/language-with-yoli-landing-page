@@ -22,14 +22,15 @@ function WhyUs() {
                             {counterOn && <CountUp start={0} end={20} duration={3} delay={0} />}
 
                             +</span> Years of Teaching Experience</li>
-                        <li><span>{counterOn && <CountUp start={0} end={5000} duration={2} delay={0} />}+</span> Students Taught Over Years</li>
-                        <li><span>{counterOn && <CountUp start={0} end={5} duration={4} delay={0} />}+</span>Teaching Awards</li>
+
+
                         <li>
                             <span>
                                 {/* {counterOn && <CountUp start={0} end={5} duration={4} delay={0} />} */}
 
                                 <img src="images/rating-2.png" alt="" /></span> <Link className='goo-rev' to='https://www.google.com/search?client=opera-gx&q=language+with+yoli&sourceid=opera&ie=UTF-8&oe=UTF-8' target='_blank'>Google Reviews</Link>
                         </li>
+                        <li><span>{counterOn && <CountUp start={0} end={5000} duration={2} delay={0} />}+</span> Students Taught Over Years</li>
                     </ul>
                 </ScrollTrigger>
             </div>

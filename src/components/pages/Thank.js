@@ -21,7 +21,7 @@ function Thank() {
             <div className="free-contact">
 
                 <div className="contact-wrapper">
-                    <h1>Any Questions? <span>Contact Us </span>here</h1>
+                    <h1>Queries? <span>Contact Us </span>here</h1>
                     <div className="free-contact-block">
                         <img src="images/whatsapp.png" alt="" />
                         + 1 (516) 732-6794

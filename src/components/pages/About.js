@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './About.css';
+import CustomVideoPlayer from '../CustomVideoPlayer';
 import VideoBCS from '../videos/register.mp4';
 
 function About() {
@@ -61,8 +62,7 @@ function About() {
                     <div className="vector">
                         <h1>Take the <span>First</span> Step <br /> Register for <span>Spanish</span>  Classes</h1>
                         {/* <img src="images/free.png" alt="" /> */}
-                        <video controls src={VideoBCS
-                        } autoPlay loop />
+                        <CustomVideoPlayer videoSource={VideoBCS} />
                     </div>
                     <div className="input-form">
                         <label htmlFor="">Enter your Name</label>
@@ -107,7 +107,7 @@ function About() {
                 <div className="free-contact">
 
                     <div className="contact-wrapper">
-                        <h1>Any Questions? <span>Contact Us </span>here</h1>
+                        <h1> Queries? <span>Contact Us </span>here</h1>
                         <div className="free-contact-block">
                             <img src="images/whatsapp.png" alt="" />
                             + 1 (516) 732-6794
