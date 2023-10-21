@@ -38,6 +38,40 @@
     -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDPn9OZdXbNZC-7Ep3qlQqbZ8ucxng-O1g",
+      authDomain: "language-with-yoli-lp.firebaseapp.com",
+      databaseURL: "https://language-with-yoli-lp-default-rtdb.firebaseio.com",
+      projectId: "language-with-yoli-lp",
+      storageBucket: "language-with-yoli-lp.appspot.com",
+      messagingSenderId: "586371674805",
+      appId: "1:586371674805:web:5110e584cef976171944fc",
+      measurementId: "G-365NGPRQ0Y"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11361542699">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11361542699');
+</script>
+
 </body>
 
 </html>

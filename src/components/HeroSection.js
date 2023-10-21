@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 // import { Button } from './Button';
 import './HeroSection.css';
@@ -8,6 +9,27 @@ import Typed from 'react-typed';
 
 
 function HeroSection() {
+    useEffect(() => {
+        // Google Ads conversion tracking code
+        const script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11361542699';
+        script.async = true;
+
+        script.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                window.dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'AW-11361542699');
+        };
+
+        document.head.appendChild(script);
+        return () => {
+            // Clean up if needed
+            document.head.removeChild(script);
+        };
+    }, []);
     return (
         <div className='hero-container'>
             {/* <video controls src={VideoBCS

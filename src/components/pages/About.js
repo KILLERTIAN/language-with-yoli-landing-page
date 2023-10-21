@@ -1,10 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './About.css';
 import CustomVideoPlayer from '../CustomVideoPlayer';
 import VideoBCS from '../videos/register.mp4';
 
 function About() {
+    useEffect(() => {
+        // Google Ads conversion tracking code
+        const script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11361542699';
+        script.async = true;
+
+        script.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                window.dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'AW-11361542699');
+        };
+
+        document.head.appendChild(script);
+
+        return () => {
+            // Clean up if needed
+            document.head.removeChild(script);
+        };
+    }, []);
     const navigate = useNavigate();
 
     const [user, setUser] = useState(

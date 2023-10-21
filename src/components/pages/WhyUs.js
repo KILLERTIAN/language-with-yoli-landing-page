@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './WhyUs.css';
 import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
@@ -7,6 +7,28 @@ import ScrollTrigger from 'react-scroll-trigger';
 // import VideoBCS from '../videos/Homepageintro.mp4';
 function WhyUs() {
     const [counterOn, setCounterOn] = useState(false);
+    useEffect(() => {
+        // Google Ads conversion tracking code
+        const script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11361542699';
+        script.async = true;
+
+        script.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                window.dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'AW-11361542699');
+        };
+
+        document.head.appendChild(script);
+
+        return () => {
+            // Clean up if needed
+            document.head.removeChild(script);
+        };
+    }, []);
     return (
         <div className='whyus-container'>
             <div className="why-us-backhider">
