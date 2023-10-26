@@ -25,6 +25,7 @@ function Home() {
             // Clean up if needed
             document.head.removeChild(script);
         };
+
     }, []);
     return (
         <>

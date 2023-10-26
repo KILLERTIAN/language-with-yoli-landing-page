@@ -24,6 +24,7 @@ function Thank() {
             // Clean up if needed
             document.head.removeChild(script);
         };
+
     }, []);
     return (
         <div className="thank-container">

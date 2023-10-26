@@ -9,27 +9,29 @@ import Typed from 'react-typed';
 
 
 function HeroSection() {
-    useEffect(() => {
-        // Google Ads conversion tracking code
-        const script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11361542699';
-        script.async = true;
+    // useEffect(() => {
+    //     // Google Ads conversion tracking code
+    //     gtag('config', 'G-27M0V6EVDC');
 
-        script.onload = () => {
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                window.dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'AW-11361542699');
-        };
+    //     //     const script = document.createElement('script');
+    //     //     script.src = 'https://www.googletagmanager.com/gtag/js?id=G-27M0V6EVDC';
+    //     //     script.async = true;
 
-        document.head.appendChild(script);
-        return () => {
-            // Clean up if needed
-            document.head.removeChild(script);
-        };
-    }, []);
+    //     //     script.onload = () => {
+    //     //         window.dataLayer = window.dataLayer || [];
+    //     //         function gtag() {
+    //     //             window.dataLayer.push(arguments);
+    //     //         }
+    //     //         gtag('js', new Date());
+    //     //         gtag('config', 'G-27M0V6EVDC');
+    //     //     };
+
+    //     //     document.head.appendChild(script);
+    //     //     return () => {
+
+    //     //         document.head.removeChild(script);
+    //     //     };
+    // }, []);
     return (
         <div className='hero-container'>
             {/* <video controls src={VideoBCS
