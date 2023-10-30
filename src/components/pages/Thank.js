@@ -6,7 +6,7 @@ function Thank() {
     useEffect(() => {
         // Google Ads conversion tracking code
         const script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11361542699';
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-27M0V6EVDC';
         script.async = true;
 
         script.onload = () => {
@@ -15,15 +15,11 @@ function Thank() {
                 window.dataLayer.push(arguments);
             }
             gtag('js', new Date());
-            gtag('config', 'AW-11361542699');
+            gtag('config', 'G-27M0V6EVDC');
         };
 
         document.head.appendChild(script);
 
-        return () => {
-            // Clean up if needed
-            document.head.removeChild(script);
-        };
 
     }, []);
     return (
