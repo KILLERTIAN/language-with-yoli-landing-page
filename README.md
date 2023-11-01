@@ -1,4 +1,4 @@
-# language-with-yoli-landing-page
+# Language-with-yoli-landing-page
 
 This is the landing page made for a client who is based in the USA and teaches Spanish Online
 
