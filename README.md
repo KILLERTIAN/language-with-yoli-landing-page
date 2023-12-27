@@ -1,6 +1,6 @@
 # Language-with-yoli-landing-page
 
-This is the landing page made for a client who is based in the USA and teaches Spanish Online
+This is the landing page made using React and Firebase for a Spanish Tutor.
 
 Deployed Link:- https://language-with-yoli-lp.web.app
 
