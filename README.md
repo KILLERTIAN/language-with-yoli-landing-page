@@ -1,4 +1,4 @@
-# Language-with-yoli-landing-page
+# Language With Yoli Landing Page
 
 This is the landing page made using React and Firebase for a Spanish Tutor.
 
