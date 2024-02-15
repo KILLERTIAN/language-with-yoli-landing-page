@@ -4,7 +4,7 @@ This is the landing page made using React and Firebase for a Spanish Tutor.
 
 Deployed Link:- https://language-with-yoli-lp.web.app
 
-Preview :-
+Preview 
 
 ![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/2fe1d241-7ba4-46b8-9729-fa451e0f6cc2)
 
