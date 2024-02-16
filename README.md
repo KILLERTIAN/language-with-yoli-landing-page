@@ -15,4 +15,3 @@ Preview
 ![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/8371fb40-45e7-4bbb-b8cf-073a7e6986ba)
 
 ![image](https://github.com/KILLERTIAN/language-with-yoli-landing-page/assets/77867638/f584bce8-c0ad-44bd-a3ba-673779b9ecfd)
-
